@@ -39,7 +39,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         run: |
           echo "Building Docker image..."
-          docker build -t 388832152997.dkr.ecr.us-east-1.amazonaws.com/test-qr:latest 
+          docker build -t 388832152997.dkr.ecr.us-east-1.amazonaws.com/test-qr:latest .
           echo "Pushing Docker image to Amazon ECR..."
           docker push 388832152997.dkr.ecr.us-east-1.amazonaws.com/test-qr:latest
 
